@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to FriendList Manager</h1>
+  <p class="lead">This is a simple website on which you can login and see the names of friends.</p>
+  <hr class="my-4">
+  <p>Login using your credentials and see your friend list.</p>
+  {{#if isUser}}
+  <a href="/friends" class="btn btn-primary btn-lg">Friend List</a>
+  <a href="/logout" class="btn btn-danger btn-lg"> Log Out</a>
+  {{else}}
+  <a href="/login" class="btn btn-primary btn-lg">login</a>
+  {{/if}}
+</div>
